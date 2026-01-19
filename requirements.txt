@@ -1,0 +1,5 @@
+streamlit
+pykrx
+finance-datareader
+pandas-ta
+pandas
