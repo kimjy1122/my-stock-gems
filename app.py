@@ -17,7 +17,7 @@ market_type = st.sidebar.selectbox("시장 선택", ["KOSPI", "KOSDAQ"])
 def run_analysis(m_type):
     # 최근 5일 중 데이터가 있는 날을 자동으로 탐색
     found_data = False
-    for i in range(0, 5):
+    for i in range(0, 10):
         target_date = (datetime.now() - timedelta(days=i)).strftime("%Y%m%d")
         try:
             df_investor = stock.get_market_net_purchase_of_equities_by_ticker(target_date, target_date, m_type)
